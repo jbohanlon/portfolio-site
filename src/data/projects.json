@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Fuzzy Name-Matching",
+    "description": [
+      "<strong>Business problem:</strong> A major U.S. bank needed to regularly match marketing mail recipients with new account holders.",
+      "<strong>Solution:</strong> I wrote a Java program to classify potential name matches into 1 of 30 different categories and create auditable, human-readable outputs for analysts. The program processed data sets in under 5 seconds, with 99.6% accuracy, which was a huge improvement over the previous 15-hour, manual work and review process."
+    ],
+    "techUsed": ["Java", "Maven", "Apache Commons Java Libraries"],
+    "relativeImageDirectoryPath": "project-images/fuzzy-name-matching.jpg",
+    "imageAltText": "Markers and name tags on a table",
+    "imageAttribution": "Image from: https://unsplash.com/photos/566CgCRSNCk",
+    "workProject": true
+  },
+  {
+    "title": "Weather Site",
+    "description": [
+      "I made a weather site that displays an interactive weather map and a 7-day forecast for any U.S. city. City to lat-long coordinate resolution and current weather conditions are retrieved from the OpenWeatherMap API, future forecast data comes from the National Weather Service, and the interactive map is powered by the Windy map forecast API."
+    ],
+    "techUsed": [
+      "JavaScript",
+      "jQuery",
+      "HTML",
+      "SCSS",
+      "Bootstrap",
+      "webpack",
+      "OpenWeatherMap API",
+      "National Weather Service API",
+      "Windy API"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/weather-site",
+        "text": "Check it out on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/weather-site.jpg",
+    "imageAltText": "Weather website screenshot showing a weather warning, temperature map, and multi-day forecast",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "FEMA Disaster Data Visualization",
+    "description": [
+      "I made a step-by-step guide to teach people how to create data visualizations in Python! The guide shows readers how to group, graph, and plot their data with the pandas, geopandas, and Bokeh libraries."
+    ],
+    "techUsed": ["Python", "pandas", "geopandas", "Bokeh"],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/pandas-bokeh-visualization",
+        "text": "Check it out on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/fema-disaster-data-visualization.jpg",
+    "imageAltText": "Stacked bar chart above two USA heat maps",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "Browser-Based Tool for Generating Complex SQL Queries",
+    "description": [
+      "<strong>Business problem:</strong> Our banking clients regularly send mail to the same people multiple times per year, so it can be difficult to determine which marketing campaign led someone to open an account. Since only one campaign can take credit for an account opening, any ambiguity needs to be sorted out. The existing approach was slow because it required analysts to manually write hundreds of SQL queries to analyze a single campaign.",
+      "<strong>Solution:</strong> I created a tool that identifies duplicate records across different data sets, generates a VBA module that routes accounts to the correct campaigns, and generates a color-coded table that highlights data entry errors. This saves over 1,000 employee hours each year by eliminating the need to work across dozens of Microsoft Access databases."
+    ],
+    "techUsed": ["JavaScript", "jQuery", "HTML", "CSS", "VBA", "SQL"],
+    "relativeImageDirectoryPath": "project-images/browser-based-tool-for-generating-complex-sql-queries.jpg",
+    "imageAltText": "Network of light beams in front of city buildings at night",
+    "imageAttribution": "Image from: https://www.pexels.com/photo/time-lapse-photography-of-blue-lights-373543/",
+    "workProject": true
+  },
+  {
+    "title": "ETL (Extract-Transform-Load) Applications for Processing Large Data Sets",
+    "description": [
+      "<strong>Business problem:</strong> We receive terabytes of raw data from vendors and clients each year and need an efficient way to standardize, trim, and enhance that data. Non-technical analysts also need to be able to perform processing operations with minimal training.",
+      "<strong>Solution:</strong> I replaced our Access and SPSS workflows with simpler Java and Python-based file processing tools. These tools save over 4,000 employee hours each year and only require around 15 minutes of training to learn. The tools also generate accompanying reports that help analysts detect errors in the original, raw data."
+    ],
+    "techUsed": ["Java", "Python", "pandas"],
+    "relativeImageDirectoryPath": "project-images/etl-applications-for-processing-large-data-sets.jpg",
+    "imageAltText": "Line of LED arrows pointing to the right",
+    "imageAttribution": "Image from: https://www.pexels.com/photo/yellow-arrow-led-signage-394377/",
+    "workProject": true
+  },
+  {
+    "title": "jonathanohanlon.com",
+    "description": [
+      "I made a portfolio website, and you’re looking at it right now! It's a static site that I built with webpack and EJS templates, and it's hosted on GitHub Pages. Thanks, GitHub!"
+    ],
+    "techUsed": ["JavaScript", "HTML", "SCSS", "Bootstrap", "webpack", "EJS"],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/portfolio-site",
+        "text": "Check it out on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/jonathanohanlon-website.jpg",
+    "imageAltText": "Screenshot of the home page of jonathanohanlon.com",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "Express Local Library",
+    "description": [
+      "I made an MVC library catalog app using Express and MongoDB! It's based on a tutorial from Mozilla that shows how to create an online book management system. I extended the tutorial with some custom search functionality, and made other enhancements here and there."
+    ],
+    "techUsed": [
+      "JavaScript",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Pug",
+      "HTML",
+      "CSS"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/express-local-library",
+        "text": "Check it out on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/express-local-library.jpg",
+    "imageAltText": "Colorful books on a shelf",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "Ionic/Capacitor Feature Demo",
+    "description": [
+      "This is an Ionic/Capacitor progressive web app (PWA) that shows off a few Capacitor APIs, including: Storage, Filesystem, Camera, and Local Notifications. The app allows you to fire time-delayed notifications at different notification levels and also allows you to take photos and view them in a gallery display. The project can be built as an iOS app, Android app, or regular web browser app!"
+    ],
+    "techUsed": ["JavaScript", "Ionic Framework", "Capacitor", "React"],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/capacitor-feature-demo",
+        "text": "Check it out on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/ionic-capacitor-feature-demo.jpg",
+    "imageAltText": "Photo gallery app with pictures of European cities",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "Marketing Campaign Response Visualization",
+    "description": [
+      "<strong>Business problem:</strong> Our banking clients wanted to determine how the geographical distribution of their physical locations corresponded to the locations of customers who recently opened new accounts.",
+      "<strong>Solution:</strong> I created a Python program that renders customer and branch locations on an interactive map, displaying data at variable zoom levels and breaking down account types (credit card, loan, etc.)."
+    ],
+    "techUsed": ["Python", "pandas", "geopandas", "Bokeh"],
+    "relativeImageDirectoryPath": "project-images/marketing-campaign-response-visualization.jpg",
+    "imageAltText": "Person using a credit card with a handheld card reader",
+    "imageAttribution": "Image from: https://www.pexels.com/photo/person-paying-for-food-delivery-with-a-credit-card-4393443/",
+    "workProject": true
+  },
+  {
+    "title": "Competitive Landscape Heat Map",
+    "description": [
+      "<strong>Business problem:</strong> Our banking clients wanted to better understand the competitive landscape in certain regions before establishing new physical locations.",
+      "<strong>Solution:</strong> Using FDIC bank branch data and U.S. Census Bureau geospatial data, I created a tool that generates bank branch concentration heat maps within a designated market area, at both ZIP-3 and ZIP-5 levels."
+    ],
+    "techUsed": ["Python", "pandas", "geopandas", "Bokeh"],
+    "relativeImageDirectoryPath": "project-images/competitive-landscape-heat-map.jpg",
+    "imageAltText": "Globe with North America in focus",
+    "imageAttribution": "Image from: https://www.pexels.com/photo/antique-antique-globe-antique-shop-antique-store-414916/",
+    "workProject": true
+  },
+  {
+    "title": "Hotdog Hawk",
+    "description": [
+      "I made a game in Java using the libGDX development framework! In this game, you play as a bird who blasts his way past weaponized warblers, malicious mallards, and endless explosions... all in pursuit of hotdogs!"
+    ],
+    "techUsed": ["Java", "libGDX", "Gradle", "Adobe Photoshop"],
+    "relativeImageDirectoryPath": "project-images/hotdog-hawk.jpg",
+    "imageAltText": "Gameplay screenshot of the game Hotdog Hawk",
+    "imageAttribution": null,
+    "workProject": false
+  },
+  {
+    "title": "Frontend Masters Tutorial Projects",
+    "description": [
+      "As an exercise in React and modern JavaScript development, I took a couple of Frontend Masters courses and created a Pet Adoption app and a JavaScript Virtual Pet Game!"
+    ],
+    "techUsed": ["JavaScript", "React", "HTML", "CSS"],
+    "links": [
+      {
+        "url": "https://github.com/jbohanlon/react-pet-adoption-site",
+        "text": "Check out the Pet Adoption app on GitHub!"
+      },
+      {
+        "url": "https://github.com/jbohanlon/tamagotchi-fox-game",
+        "text": "Check out the Virtual Pet Game on GitHub!"
+      }
+    ],
+    "relativeImageDirectoryPath": "project-images/ped-adoption-and-fox-game.jpg",
+    "imageAltText": "Split screenshot with a pet adoption site on top and an interactive pet game on the bottom",
+    "imageAttribution": null,
+    "workProject": false
+  }
+]

@@ -1,0 +1,63 @@
+<% const pages = require("../data/pages.json"); %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %> - Jonathan O'Hanlon - Software Engineer</title>
+    <meta name="description" content="<%= pageDescription %>"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet"
+    />
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0VMW9JNGS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0VMW9JNGS1');
+    </script>
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to content</a>
+    <nav id="top-navbar" class="navbar navbar-expand-lg <%= isHomePageNavbar ? "navbar-dark position-absolute" : "navbar-light" %> w-100 p-4">
+      <div class="container">
+        <a class="navbar-brand" href="./"
+          ><span
+            ><img src="<%= require('../images/j-icon-small.png') %>" alt="The letter J in a dark gray box" />
+            Jonathan O'Hanlon</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="toggle-navbar-icon fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <%=
+              pages.map((page) => {
+                return `<li class="nav-item"><a class="nav-link ${pageTitle === page.pageTitle ? 'active' : ''}" href="./${page.filename === "index.html" ? "" : page.filename}">${page.pageTitle}</a></li>`
+              }).join('')
+            %>
+          </ul>
+        </div>
+      </div>
+    </nav>

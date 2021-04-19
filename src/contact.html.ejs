@@ -1,0 +1,51 @@
+<%= require('./includes/header.html.ejs')({isHomePageNavbar: false, pageTitle: htmlWebpackPlugin.options.pageTitle, pageDescription: htmlWebpackPlugin.options.pageDescription}) %>
+<main id="main" class="pt-5">
+  <div id="contact-form-container">
+    <h1 class="text-center">Get in touch</h1>
+    <p class="h4 my-4 text-center">
+      Think I can help with something? Feel free to reach out!
+    </p>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="inputName">Name *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          name="name"
+          required="required"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputEmail"
+          name="email"
+          required="required"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <label for="messageTextarea">Message *</label>
+        <textarea
+          class="form-control"
+          id="messageTextarea"
+          rows="8"
+          name="message"
+          required="required"
+          maxlength="2000"
+        ></textarea>
+      </div>
+      <div
+        class="h-captcha text-center mb-1"
+        data-sitekey="34c736cc-7f0c-45cd-b9ef-2d1b0e854ce9"
+      ></div>
+      <div id="contact-submission-feedback"></div>
+      <div class="text-center">
+        <button id="contact-form-send-button" type="submit" class="mt-1 btn btn-primary btn-lg">Send</button>
+      </div>
+    </form>
+  </div>
+</main>
+<%= require('./includes/footer.html.ejs')() %>

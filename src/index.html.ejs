@@ -1,0 +1,58 @@
+<% const { outputAsListItems } = require('./backend-js/helpers.js'); %>
+<%= require('./includes/header.html.ejs')({isHomePageNavbar: true, pageTitle: htmlWebpackPlugin.options.pageTitle, pageDescription: htmlWebpackPlugin.options.pageDescription}) %>
+<main id="main">
+  <section id="home-page-hero" class="d-flex align-items-center">
+    <div id="hero-content-wrapper" class="text-white w-100">
+      <div id="hero-content" class="text-center mx-auto">
+        <h1>
+          Hi, I'm Jonathan!
+        </h1>
+        <p class="h5 py-2">
+          I work on cool software projects and have experience with a bunch of different technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="about-me" class="d-flex align-items-center py-5">
+    <div id="about-me-wrapper" class="text-center container my-5">
+      <h1 class="mb-4">Ready to go</h1>
+      <p class="h5 mb-3">
+        I love solving problems with code.
+        <br />
+        Check out my <a href="./projects.html">Projects</a> page to see some things that I've worked on!
+      </p>
+      <p class="h5">
+        I've picked up a lot of skills over the years and I look forward to learning even more.
+        Find out about my specialties below!
+      </p>
+    </div>
+  </section>
+  <section id="skills" class="pt-5 mb-n5">
+    <div class="container my-5">
+      <h1 class="text-center mb-5">Skills</h1>
+      <div class="row">
+        <div class="col-sm-6 col-xl-4 text-center mb-5">
+          <h2 class="h4"><i class="fab fa-python"></i> Python</h2>
+          <%= outputAsListItems(['pandas', 'NumPy', 'GeoPandas', 'Jupyter Notebook']) %>
+        </div>
+        <div class="col-sm-6 col-xl-4 text-center mb-5">
+          <h2 class="h4"><i class="fas fa-chart-bar"></i> Visualization</h2>
+          <%= outputAsListItems(['Tableau', 'Excel', 'Google Sheets', 'Mode', 'Bokeh']) %>
+        </div>
+        <div class="col-sm-6 col-xl-4 text-center mb-5">
+          <h2 class="h4"><i class="fas fa-flask"></i> Experimentation</h2>
+          <%= outputAsListItems(['A/B testing', 'Statistical analysis', 'Audience segmentation']) %>
+        </div>
+        <div class="col-sm-6 col-xl-6 text-center mb-5">
+          <h2 class="h4"><i class="fas fa-database"></i> Databases</h2>
+          <%= outputAsListItems(['PostgreSQL', 'MySQL', 'SQL Server', 'Microsoft Access', 'Databricks']) %>
+        </div>
+        <div class="col-sm-6 col-xl-6 text-center mb-5">
+          <h2 class="h4"><i class="fas fa-laptop-code"></i> General Programming</h2>
+          <%= outputAsListItems(['Java', 'JavaScript', 'HTML/CSS', 'Git']) %>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= require('./includes/footer.html.ejs')() %>

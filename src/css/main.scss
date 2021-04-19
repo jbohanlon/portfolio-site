@@ -1,0 +1,189 @@
+@import "./variable-overrides";
+@import "~bootstrap/scss/bootstrap";
+
+// Override bootstrap default bold headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 400;
+}
+
+$footer-height: 220px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: $footer-height;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+/* For screen readers */
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  // Many screen reader and browser combinations announce broken words
+  // as they would appear visually, so we'll ensure word-wrap normal.
+  word-wrap: normal !important;
+
+  &:focus {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    clip: auto !important;
+    clip-path: none;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+}
+
+/* Header */
+
+#top-navbar {
+  &.navbar-dark {
+    a.nav-link {
+      color: #ffffff;
+      text-shadow: 0px 0px 5px #000000;
+
+      &.active {
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    .navbar-toggler {
+      border-color: #ffffff;
+
+      .toggle-navbar-icon {
+        color: #ffffff;
+      }
+    }
+
+    .navbar-brand {
+      text-shadow: 0px 0px 5px #000000;
+    }
+  }
+
+  &.navbar-light {
+    a.nav-link {
+      color: rgba(0, 0, 0, 0.9);
+
+      &.active {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+      }
+    }
+
+    .navbar-toggler {
+      .toggle-navbar-icon {
+        color: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+
+  a.nav-link {
+    padding-bottom: 0.1rem;
+  }
+
+  .navbar-brand img {
+    position: relative;
+    top: -2px;
+  }
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  width: 100%;
+  background-color: #444444;
+}
+
+/* Home Page */
+
+#home-page-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/sunset-quad.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 65vh;
+  padding-top: 70px;
+}
+
+#hero-content-wrapper {
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  padding: 10vmax 7vmax;
+
+  #hero-content {
+    background: radial-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 80%);
+    padding: 2.5em 2em;
+  }
+}
+
+@media (min-width: 961px) {
+  #hero-content {
+    width: 700px;
+    max-width: 60%;
+  }
+}
+
+#about-me {
+  background-color: #efefef;
+}
+
+#skills {
+  ul {
+    line-height: 2em;
+  }
+}
+
+/* Contact Page */
+
+#contact-form-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #contact-form-container {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact-form-container {
+    max-width: 600px;
+  }
+}

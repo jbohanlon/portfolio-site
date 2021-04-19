@@ -1,0 +1,16 @@
+<% const projects = require('./data/projects.json'); %>
+<%= require('./includes/header.html.ejs')({isHomePageNavbar: false, pageTitle: htmlWebpackPlugin.options.pageTitle, pageDescription: htmlWebpackPlugin.options.pageDescription}) %>
+<main id="main" class="my-5">
+  <div class="container">
+    <h1 class="text-center">Projects</h1>
+    <p class="h4 my-4 text-center">
+      I've worked on a lot of projects over the years!
+    </p>
+    <%
+    projects.forEach(function(project, i){
+      %><%= require('./includes/project-block.html.ejs')({project, imageRight: i % 2 === 0}) %><%
+    });
+    %>
+  </div>
+</main>
+<%= require('./includes/footer.html.ejs')() %>
