@@ -1,0 +1,12 @@
+<div class="row my-5">
+  <div class="col-md-5 align-self-center">
+    <%= `<img class="w-100 img-fluid img-thumbnail" ${project.imageAttribution ? `title="${project.imageAttribution}"` : ''} src="${require(`../images/${project.relativeImageDirectoryPath}`)}" alt="${project.imageAltText}" />` %>
+  </div>
+  <div class="col-md-7 align-self-center <%= imageRight ? "order-md-last" : "order-md-first" %>">
+    <h2 class="my-2 mt-md-3"><%= project.title %></h2>
+    <%= project.description.map((line) => `<p>${line}</p>`).join('') %>
+    <p><span class="badge badge-pill badge-primary"><%= project.workProject ? "Work Project" : "Personal Project" %></span></p>
+    <p><%= project.techUsed.map((tech) => `<span class="badge badge-pill badge-secondary">${tech}</span>`).join('') %></p>
+    <%= project.links ? project.links.map((link) => `<p><a href="${link.url}">${link.text}</a></p>`).join('') : '' %>
+  </div>
+</div>

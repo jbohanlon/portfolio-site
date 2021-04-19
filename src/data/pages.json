@@ -1,0 +1,17 @@
+[
+  {
+    "pageTitle": "Home",
+    "filename": "index.html",
+    "pageDescription": "Hi, I'm Jonathan! I work on cool software projects and have experience with a bunch of different technologies."
+  },
+  {
+    "pageTitle": "Projects",
+    "filename": "projects.html",
+    "pageDescription": "I've worked on a lot of projects over the years!"
+  },
+  {
+    "pageTitle": "Contact",
+    "filename": "contact.html",
+    "pageDescription": "Think I can help with something? Feel free to reach out!"
+  }
+]
